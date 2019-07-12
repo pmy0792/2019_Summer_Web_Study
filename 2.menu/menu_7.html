@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{background:url("https://i.pinimg.com/564x/0f/3d/92/0f3d928340fd4711d316c2c75cb076ee.jpg");
+            }
+     h1,h3{
+            padding-top:80px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>짜파게티</h1>
+        <h3>3500원</h3>
+     <button onclick="myFunction()">주문하기</button>
+
+        <p id="demo"></p>
+    <script>
+function myFunction() {
+  var txt;
+  var r = confirm("주문하시겠습니까?");
+  if (r == true) {
+    txt = "주문이 완료되었습니다.";
+  } else {
+    txt = "주문 취소되었습니다.";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+<button onclick="goBack()">뒤로가기</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+    
+    </body>
+
+
+
+
+</html>
